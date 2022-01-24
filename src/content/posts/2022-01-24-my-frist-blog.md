@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: My Frist BLog
+title: My First Blog
 slug: my-first-blog
 date: 2022-01-24 17:32
 description: my first blog
