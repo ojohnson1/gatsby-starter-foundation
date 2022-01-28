@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Olivia Johnson
 tagline: Web Developer
-featuredImage: /assets/christian-chen-kpydzvywfqg-unsplash.jpg
+featuredImage: /assets/jess-bailey-q10vitrvyum-unsplash.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
