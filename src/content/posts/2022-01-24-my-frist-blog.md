@@ -7,3 +7,21 @@ description: my first blog
 featuredImage: /assets/bench-accounting-nvzvopqw0gc-unsplash.jpg
 ---
 **Hello World**
+
+
+```
+@layera {
+  .cascade p {
+    font-weight: bold;
+    color: green;
+  }
+}
+
+@layerb {
+  p {
+    color: blue;
+    font-weight: bold;
+  }
+}
+
+```
