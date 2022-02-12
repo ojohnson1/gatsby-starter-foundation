@@ -9,7 +9,7 @@ featuredImage: /assets/bench-accounting-nvzvopqw0gc-unsplash.jpg
 **Hello World**
 
 
-```
+```css
 @layera {
   .cascade p {
     font-weight: bold;
