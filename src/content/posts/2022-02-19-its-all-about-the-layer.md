@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Its All About The Layer
-slug: -all-about-the-layer
+slug: /all-about-the-layer
 date: 2022-02-18 20:27
 description: |
   Cascade Layers
