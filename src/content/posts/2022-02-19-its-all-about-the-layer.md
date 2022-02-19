@@ -37,14 +37,14 @@ The way that CSS works normally the selector specificity hierarchy is as follows
 
 
 ```css
-@layera {
+@layer a {
   .cascade p {
     font-weight: bold;
     color: green;
   }
 }
 
-@layerb {
+@layer b {
   p {
     color: blue;
     font-weight: bold;
