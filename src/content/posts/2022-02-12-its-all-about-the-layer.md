@@ -31,6 +31,28 @@ The way that CSS works normally the selector specificity hierarchy is as follows
 •	Type 
 •	Class 
 •	ID
+
+<br>
+**Hello World**
+
+
+```css
+@layera {
+  .cascade p {
+    font-weight: bold;
+    color: green;
+  }
+}
+
+@layerb {
+  p {
+    color: blue;
+    font-weight: bold;
+  }
+}
+
+```
+
  As shown, a class selector has more specificity than a type selector. A text editor would display the below example selector’s specificity of “This is a test 1” as (0,0,1) and “This is a test 2” as (0,1,1).  Because the “. cascade p” has a higher specificity it will override the type selector styling of p. As you can see in the image the text displays green. Now this is when cascade layers come in handy. However, with the @layer selector all styling in the second layer would take precedent over styling in the first layer. So, a simple selector can override a stronger selector if its layer specificity is higher. Element specificity has met its match! 
 
 ## What to Watch out for…
