@@ -28,7 +28,7 @@ description: Typography
 •	16-20pt for a desktop computer
 With different screens come different reading distances. People viewing your page on a smartphone are closer to your text than those reading your page from a desktop. This means your font needs to increase as the screen gets bigger. You can choose a base font and scale up 1x-2x as you create different media queries or clamp () functions. You can google and find a typeface scaling ratio as a reference. For large screens you want to have large side margins to keep the text center. While on small screens you want small margins so your line length can increase.  For small screens you need to increase the line height and vice versa for big screens. I hope this post helped you on your typography journey. Please reach out if you would like to share any tips that weren’t discuss in this topic.</p>
 
-<p> <strong> Pro tip: </strong> Using vw units on typography impairs accessibility. When zooming in and out with a vw unit it could become to small on a mobile screen and to big on a desktop screen. To combat that use a clamp function like the one below:
+<p> <strong> Pro tip: </strong> Using vw units on typography impairs accessibility. When zooming in and out with a vw unit it could become to small on a mobile screen and to big on a desktop screen. To combat that use a clamp function like the one below:</p>
 
 
 ``` css
@@ -37,6 +37,6 @@ With different screens come different reading distances. People viewing your pag
 ```
 
 
-</p>
+
 
 
