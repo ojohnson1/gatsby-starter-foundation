@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: What's Your Typeface?
-slug: /what's-your-typeface
+slug: /whats-your-typeface
 date: 2022-02-24 17:40
 description: Typography
 ---
