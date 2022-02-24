@@ -1,9 +1,10 @@
 ---
 template: contact-page
 slug: /contact
-title: Get in touch
+title: Share
 ---
 
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
+Share any CSS and HTML tips that can help. We love to learn!
+Did something on this blog help you? Let us know!
 
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/stackrole)
+
