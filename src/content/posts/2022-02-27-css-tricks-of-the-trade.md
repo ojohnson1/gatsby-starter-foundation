@@ -8,15 +8,42 @@ description: CSS Properties and Functions
 
 # :Is and :Where Properties
 <p>The :is and :where selectors allows you to apply styles to the elements you want in a puesdo-class property. Similar to Sass preprocessor nesting, when using the :is or :where selector you can target multiple child and elements with the same styling properties without a cumbersome selector. 
+```css
+ .header :is(p,.btn) {
+  color:red;
+} 
+```
 
-You can also declare: is or :where first and choose different elements to apply the styling to. One thing to keep in mind is that these selectors themselves do not have a specificity. However, for the :is selector the specificity is set by the most specific element it is targeting in parenthesis. The pseudo class where allows you to do the same thing. The difference with using the :where selector is that it negates the specificity of the elements you are targeting. This means the styling in the :where class will always have the lowest specificity. Another benefit to using these selectors is if you misidentify one element it doesn’t impact the styling taking effect on the rest of the selectors.</p>
+You can also declare: is or :where first and choose different elements to apply the styling to.
+```css
+:where(p,.btn){
+  color:yellow;
+}
+:is(header,.title){
+  color:blue;
+}
+```
+ One thing to keep in mind is that these selectors themselves do not have a specificity. However, for the :is selector the specificity is set by the most specific element it is targeting in parenthesis. The pseudo class where allows you to do the same thing. The difference with using the :where selector is that it negates the specificity of the elements you are targeting. This means the styling in the :where class will always have the lowest specificity. Another benefit to using these selectors is if you misidentify one element it doesn’t impact the styling taking effect on the rest of the selectors.</p>
 
 
  In this example, the first declaration will be declared. This is because the header :is (p, .btn) has a specificity of (0,1,1) and the header p declaration has a (0,0,1) specificity All the selector in the parenthesis take on the specificity of the most specific element.
+``` css
+ .header :is(p,.btn) {
+  color:red;
+} 
+
+.header p {
+  color:green;
+}
+```
+
 Look at this example although .btn is a class selector it has the same specificity of the element selectors. Hopefully, using these selectors will make your code less cumbersome and more legible.
 
-Look at this example
-As shown below 
+``` css
+:where(p,.btn){
+  color:yellow;
+}
+```
 
 # Fluid Typography
 
