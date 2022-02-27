@@ -65,6 +65,7 @@ The minimum sets the smallest the text can get on the screen. The growth rate se
 
 For any text set to the CSS variable –fs-xl this will be its parameters. The font size will not get lower than 3.5rem and will not get higher than 8rem. When the screen is not at the max or min screen sizes the text will adjust according to the viewport specified. The vw unit is equal to 1% of the viewport-width. Notice in this example it also has a “+ 1rem”. This allows you as the developer to have more control over how the text will grow as the screen size increases.  Using rem units when using clamp will allow your site to adopt to user browser preferences. The custom properties you can use with this function is –fluid-type-min, --fluid-type-target, and –fluid-type-max.
 
+# Logical Properties
 
 
 
