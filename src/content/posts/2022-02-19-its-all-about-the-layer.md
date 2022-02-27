@@ -11,30 +11,30 @@ Cascade Layers is a new feature to the Cascading stylesheet architecture. This f
 
 ## What Is It?
 
-Why do I mention more control? Different techniques, such as BEM (Block Element Modifier), have been used to assert control over element specificity. Although, BEM solved the specificity issue by using classes. It did not solve the order of appearance issue with individual elements. This could then result in developers using overly specified identifiers for elements in an event to regain control. Cascade Layers can change all of this! 
+Why do I mention more control? Different techniques, such as BEM (Block Element Modifier), have been used to assert control over element specificity. BEM solved the specificity issue by using classes. However, it did not solve the order of appearance issue with individual elements. This could then result in developers using overly specified identifiers for elements in an event to regain control. Cascade Layers can change all of this! 
 
 Prior to cascade layers, Author stylesheets were the highest layer. The cascading sort order would then  determine declaration in this order:
-•	Origins and importance
-•	Context
-•	Element-attached styles
-•	Specificity
-•	Order of Appearance
-Cascade Layers will add a sixth determination layer for the cascade above specificity. When in use, cascade layers allow a developer to create new sublayers within their stylesheet. These sublayers can be listed at the top of the of the stylesheet with the order they should be applied. They specificity can also be applies by order of appearance on the stylesheet. Why is this so useful?
+1.Origins and importance
+2.Context
+3.Element-attached styles
+4.Specificity
+5.Order of Appearance
+Cascade Layers will add a sixth determination layer for the cascade above specificity. When in use, cascade layers allow a developer to create new sublayers within their stylesheet. These sublayers can be listed at the top of the of the stylesheet with the order they should be applied. Their specificity can also be applied by order of appearance on the stylesheet. Why is this so useful?
 
  With the use of cascade layers, it doesn’t matter an element’s individual specificity if it is competing with an element’s specificity in another layer. What matters is the layer’s specificity! This will help developers avoid frustrating CSS collisions.
  
-Do you want to allow order of appearance to determine the specificity of your layers? Well, guess what? The first time you declare a layer is where its specificity lies. So, if you would like to declare that layer again somewhere else on your stylesheet it will not change its layer priority.  For example, you can add a layer to another at-rule such as @media. This flexibility allows you to update styles and media queries without effecting the overall CSS structure. Layers can also be nested in layers. They can then be referred to with a dot notation instead of the @layer selector. You can add anonymous layers to your stylesheet. This enhances your CSS’s reusability, readability, and modifiability.
+Do you want to allow order of appearance to determine the specificity of your layers? Well, guess what? The first time you declare a layer is where its specificity lies. So, if you would like to declare that layer again somewhere else on your stylesheet it will not change its layer priority.  For example, you restyle a  layer in a media query using the at-rule @media. This flexibility allows you to update styles and media queries without effecting the overall CSS structure. Layers can also be nested in layers. They can then be referred to with a dot notation instead of the @layer selector. You can add anonymous layers to your stylesheet. This enhances your CSS’s reusability, readability, and modifiability.
 
 ## How it Works
 
 The way that CSS works normally the selector specificity hierarchy is as follows (Weakest to Strongest):
-•	Universal
-•	Type 
-•	Class 
-•	ID
+1.	Universal
+2.	Type 
+3.	Class 
+4.	ID
 
 <br>
-**Hello World**
+
 
 
 ```css
@@ -54,7 +54,7 @@ The way that CSS works normally the selector specificity hierarchy is as follows
 
 ```
 
- As shown, a class selector has more specificity than a type selector. A text editor would display the below example selector’s specificity of “This is a test 1” as (0,0,1) and “This is a test 2” as (0,1,1).  Because the “. cascade p” has a higher specificity it will override the type selector styling of p. As you can see in the image the text displays green. Now this is when cascade layers come in handy. However, with the @layer selector all styling in the second layer would take precedent over styling in the first layer. So, a simple selector can override a stronger selector if its layer specificity is higher. Element specificity has met its match! 
+ As shown, a class selector has more specificity than a type selector. Without the layer at-rule, a text editor would display the above example first selector’s specificity of as (0,1,1) and the second's as (0,0,1).  Because the “. cascade p” has a higher specificity it will override the type selector styling of p. Now this is when cascade layers come in handy. However, with the @layer selector all styling in the second layer would take precedent over styling in the first layer. So, a simple selector can override a stronger selector if its layer specificity is higher. Element specificity has met its match! 
 
 ## What to Watch out for…
 
