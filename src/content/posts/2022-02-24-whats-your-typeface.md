@@ -4,6 +4,7 @@ title: What's Your Typeface?
 slug: /whats-your-typeface
 date: 2022-02-24 17:40
 description: Typography
+featuredImage: /assets/brett-jordan-zomztro-9hq-unsplash.jpg
 ---
 
 
