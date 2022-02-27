@@ -5,6 +5,7 @@ slug: /all-about-the-layer
 date: 2022-02-18 20:27
 description: |
   Cascade Layers
+featuredImage: /assets/clark-van-der-beken-tk0b3dfkf_4-unsplash.jpg
 ---
 Cascade Layers is a new feature to the Cascading stylesheet architecture. This feature allows web developers to have more control over specificity and order of appearance in their author stylesheets. 
 
