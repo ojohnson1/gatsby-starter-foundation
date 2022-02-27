@@ -4,6 +4,7 @@ title: CSS Tricks of the Trade
 slug: /css-tricks-of-the-trade
 date: 2022-02-27 14:09
 description: CSS Properties and Functions
+featuredImage: /assets/kevin-ku-w7zyugynprq-unsplash.jpg
 ---
 
 # :Is and :Where Properties
