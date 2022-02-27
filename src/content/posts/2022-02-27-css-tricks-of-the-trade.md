@@ -55,8 +55,8 @@ It can also make the transition between media queries less jarring. The typograp
 
 The minimum sets the smallest the text can get on the screen. The growth rate sets how much the text will grow depending on the vary screen size before it reaches the maximum. The maximum is the largest the text can get on the screen. Take a look at this example:
 
- ```css
-  
+ 
+```css 
  --fs-xl: clamp (3.5rem,12vw +1rem,8rem)
 
 ```
