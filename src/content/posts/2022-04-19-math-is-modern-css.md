@@ -18,6 +18,11 @@ The max function also makes modern CSS easier. Max can be used to allow the view
 ## The Clamp Function
 The clamp function allows you to set a minimum value, an ideal value, and a maximum value. The ideal value is set with math operations. Clamp is often used to create fluid typography. Fluid typography allows viewers to read content on your site with clarity on different screen sizes. The clamp function can gradually increase or decrease the font size on your site. However, clamp can be used for much more.  Clamp can enable you to create a responsive site while reducing the amount of media queries you need. It also has added functionality over media queries. For example, when using the percent unit on the ideal value of an element padding it is relative to the element’s width. For this reason, the element’s width will remain between the minimum and maximum values specified.  Without the use of media queries, it allows your website to resize in a more dynamic way instead of static. You can save your media queries for accessible options like reduce motion or a dark mode option.  What’s also useful about the clamp function is as outline in the article “min (), max () and clamp (): three logical CSS functions to use today” you can create a clamp similar to the one shown below.
 
+```css
+p {
+  width: clamp(45ch, 50%, 75ch);
+}
+```
 
 
  This well allow your sentences on the site not to exceed the recommended 40 to 75 characters.  You do not need to write the word “calc” in your min,max,and clamp functions. Providing just the math operation as shown below will suffice. 
