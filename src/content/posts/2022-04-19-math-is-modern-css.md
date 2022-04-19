@@ -4,6 +4,7 @@ title: Math is Modern....CSS
 slug: /math-is-modern
 date: 2022-04-18 20:18
 description: modern css
+featuredImage: /assets/thomas-t-oppcbaakwv8-unsplash.jpg
 ---
 
 ## The Calc Function
